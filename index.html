@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mind Bloom - Calming Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Mind Bloom 🌸</h1>
+        <p class="intro">A soft space for your mind to rest. Take a moment to check in with yourself.</p>
+        <form id="surveyForm">
+            <label>How are you feeling today?</label>
+            <select>
+                <option>Calm</option>
+                <option>Anxious</option>
+                <option>Overwhelmed</option>
+                <option>Sad</option>
+                <option>Okay</option>
+            </select>
+
+            <label>Did you sleep well last night?</label>
+            <select>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <label>Would you like a calming tip or affirmation?</label>
+            <select id="responseType">
+                <option>Tip</option>
+                <option>Affirmation</option>
+            </select>
+
+            <button type="button" onclick="showResponse()">Submit</button>
+        </form>
+        <div id="response" class="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
